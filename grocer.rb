@@ -52,8 +52,6 @@ return cart
 end
 
 def checkout(cart, coupons)
-  consolidate_cart(items)
-  apply_coupons(coupons)
-  apply_clearance(items)
+  hash = {}
   return cart
 end
