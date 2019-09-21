@@ -52,6 +52,6 @@ return cart
 end
 
 def checkout(cart, coupons)
-  consolidate_cart(items)
+  consolidate_cart(cart)
   return cart
 end
