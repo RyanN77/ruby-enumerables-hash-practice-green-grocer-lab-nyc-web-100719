@@ -52,5 +52,5 @@ return cart
 end
 
 def checkout(cart, coupons)
-  # code here
+  return cart
 end
