@@ -60,8 +60,9 @@ def checkout(cart, coupons)
   cart.each do |key, value|
     item_cost = value[:price] * value[:count]
     total_cost += item_cost
+    if total_cost > 100
+      total_cost *= 0.9
+    end
   end
-  
-  
   return total_cost
 end
